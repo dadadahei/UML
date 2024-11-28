@@ -1,0 +1,35 @@
+name: Render Diagrams
+
+on:
+  push:
+    branches:
+      - main  # 在 main 分支上推送时触发
+  pull_request:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Draw.io CLI
+        run: |
+          sudo apt update
+          sudo apt install -y default-jre wget
+          wget https://github.com/jgraph/drawio-desktop/releases/latest/download/draw.io-x86_64-*.deb
+          sudo dpkg -i draw.io-x86_64-*.deb
+
+      - name: Render diagrams to PNG
+        run: |
+          mkdir -p rendered
+          for file in diagrams/*.drawio; do
+            drawio --export --format png --output "rendered/$(basename "${file%.*}").png" "$file"
+          done
+
+      - name: Upload rendered images
+        uses: actions/upload-artifact@v3
+        with:
+          name: rendered-diagrams
+          path: rendered/
