@@ -17,9 +17,9 @@ jobs:
       - name: Set up Draw.io CLI
         run: |
           sudo apt update
-          sudo apt install -y default-jre wget
-          wget https://github.com/jgraph/drawio-desktop/releases/latest/download/draw.io-x86_64-*.deb
-          sudo dpkg -i draw.io-x86_64-*.deb
+          sudo apt install -y wget
+          wget https://github.com/jgraph/drawio-desktop/releases/download/v24.7.17/draw.io-x86_64-24.7.17.deb
+          sudo dpkg -i draw.io-x86_64-24.7.17.deb
 
       - name: Render diagrams to PNG
         run: |
