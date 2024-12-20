@@ -238,11 +238,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2QBvfWVRScokN3zeO-RB-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2QBvfWVRScokN3zeO-RB-116" target="2QBvfWVRScokN3zeO-RB-32">
+        <mxCell id="2QBvfWVRScokN3zeO-RB-134" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2QBvfWVRScokN3zeO-RB-116" target="2QBvfWVRScokN3zeO-RB-133">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2QBvfWVRScokN3zeO-RB-121" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2QBvfWVRScokN3zeO-RB-120">
-          <mxGeometry x="-0.9169" y="-1" relative="1" as="geometry">
+        <mxCell id="2QBvfWVRScokN3zeO-RB-136" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2QBvfWVRScokN3zeO-RB-134">
+          <mxGeometry x="-0.1365" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -268,13 +268,19 @@
         <mxCell id="2QBvfWVRScokN3zeO-RB-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2QBvfWVRScokN3zeO-RB-129" target="2QBvfWVRScokN3zeO-RB-110">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="830" y="350" />
-              <mxPoint x="830" y="750" />
+              <mxPoint x="770" y="350" />
+              <mxPoint x="770" y="750" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="2QBvfWVRScokN3zeO-RB-129" value="账户介质为银行卡？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="514" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2QBvfWVRScokN3zeO-RB-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2QBvfWVRScokN3zeO-RB-133" target="2QBvfWVRScokN3zeO-RB-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2QBvfWVRScokN3zeO-RB-133" value="弹窗提示账户为久悬状态" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="340" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
